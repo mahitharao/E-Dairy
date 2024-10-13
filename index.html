@@ -1,0 +1,62 @@
+<!-- index.html -->  
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+   <meta charset="UTF-8">  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   <title>E-Diary</title>  
+   <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+   <header>  
+      <nav>  
+        <ul>  
+           <li><a href="#bio">Bio</a></li>  
+           <li><a href="#diary">Diary</a></li>  
+           <li><a href="#todo">To-Do List</a></li>  
+        </ul>  
+      </nav>  
+   </header>  
+   <main>  
+      <section id="bio">  
+        <h2>Bio</h2>  
+        <form>  
+           <label for="name">Name:</label>  
+           <input type="text" id="name" name="name">  
+           <label for="email">Email:</label>  
+           <input type="email" id="email" name="email">  
+           <label for="profile-picture">Profile Picture:</label>  
+           <input type="file" id="profile-picture" name="profile-picture">  
+           <button type="submit">Save</button>  
+        </form>  
+      </section>  
+      <section id="diary">  
+        <h2>Diary</h2>  
+        <form>  
+           <label for="date">Date:</label>  
+           <input type="date" id="date" name="date">  
+           <label for="entry">Entry:</label>  
+           <textarea id="entry" name="entry"></textarea>  
+           <button type="submit">Save</button>  
+        </form>  
+        <ul id="diary-entries">  
+           <!-- diary entries will be displayed here -->  
+        </ul>  
+      </section>  
+      <section id="todo">  
+        <h2>To-Do List</h2>  
+        <form>  
+           <label for="task">Task:</label>  
+           <input type="text" id="task" name="task">  
+           <label for="due-date">Due Date:</label>  
+           <input type="date" id="due-date" name="due-date">  
+           <button type="submit">Add</button>  
+        </form>  
+        <ul id="todo-list">  
+           <!-- to-do list items will be displayed here -->  
+        </ul>  
+      </section>  
+   </main>  
+   <script src="script.js"></script>  
+</body>  
+</html>
